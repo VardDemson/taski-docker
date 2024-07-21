@@ -9,9 +9,9 @@ load_dotenv()
 
 SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
 
-DEBUG = os.environ['DEBUG'].lower()
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['158.160.88.211', '127.0.0.1', 'localhost', 'taskmaster.sytes.net']
 
 
 # Application definition
