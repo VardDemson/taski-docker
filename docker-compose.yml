@@ -2,7 +2,6 @@ version: '3'
 
 volumes:
   pg_data:
-  # Новый volume — для статических файлов
   static:
 
 services:
@@ -29,7 +28,7 @@ services:
       - static:/frontend_static
 
   gateway:
-    build: ./gateway/
+    build: ./nginx/
     env_file: .env
     volumes:
       - static:/staticfiles
